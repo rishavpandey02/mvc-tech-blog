@@ -1,0 +1,16 @@
+<div class="card-header">{{post.title}}</div>
+  <div class="card-body">
+    <h5 class="card-title">Posted By {{post.user.username}} on {{formatDate post.created_at}}</h5>
+    <p class="card-text">{{post.content}}</p>
+  </div>
+</div>
+
+{{#if loggedIn}}
+ <form class="comment-form">
+    <p class="form-label">Comment</p>
+    <textarea class="form-input" id="comment"></textarea>
+    <button type="submit" class="btn btn-primary">Submit</button>
+ </form>
+ {{/if}}
+
+ <script src="/js/comment.js"></script>

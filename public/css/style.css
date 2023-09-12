@@ -1,0 +1,27 @@
+
+*::before,
+*::after,
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+a {
+    font-family: Helvetica, Arial, Lucida Grande, Calibri, Verdana, Sans serif;
+
+}
+
+li,
+p,
+h3 {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,19 @@
+<div>
+    <h5 class="fs-2 text-center mb-4">Welcome to your Dashboard</h5>
+</div>
+ {{#each posts as |post|}}
+    <a href="/dashboard/edit/{{id}}" style="text-decoration: none; color: inherit;">
+    <div class="card">
+    <div class="card-header">{{title}}</div>
+    <div class="card-body">
+      <h5 class="card-title">Posted By {{user.username}} on {{formatDate created_at}}</h5>
+      <p class="card-text">{{content}}</p>
+    </div>
+    </div>
+    </a> 
+    
+    <button class="btn btn-danger" id="del-post-btn"><i class="bi bi-trash"></i>Delete Post</button>                          
+
+    {{/each}}
+
+<script src="/js/delete.js"></script>
